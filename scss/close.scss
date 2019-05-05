@@ -1,0 +1,267 @@
+* {
+	margin: 0;
+}
+body {
+	margin: 0;
+	height: 100vh;
+	main {
+		background: #1a1a1a;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+		height: 100%;
+		.group {
+			background-color: rgb(26, 26, 26);
+			box-shadow: 0px 0px 28.71px 0.29px rgba(7, 7, 7, 0.85);
+			width: 1265px;
+			height: 559px;
+			position: relative;
+			padding-top: 55px;
+			padding-bottom: 35px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+			-ms-align-items: center;
+			align-items: center;
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;
+			&:before {
+				background: linear-gradient(135deg, #fff 50%, transparent 50%);
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 107px;
+				height: 107px;
+				content: "";
+			}
+			h1 {
+				font-size: 60px;
+				font-family: "PTSans-Bold";
+				color: rgb(98, 98, 98);
+				text-transform: uppercase;
+				line-height: 1.2;
+				text-align: center;
+				letter-spacing: -0.005em;
+				z-index: 10;
+				line-height: 100%;
+				margin: 0;
+				width: 100%;
+				position: relative;
+				&:before {
+					content: 'набір закрито';
+					position: absolute;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;
+					justify-content: center;
+					-ms-align-items: center;
+					align-items: center;
+					background-color: rgb(203, 59, 59);
+					width: 241px;
+					height: 40px;
+					font-size: 24px;
+					font-family: 'PTSans-Bold';
+					color: #fff;
+				}
+			}
+			.content {
+				ul {
+					color: rgb(98, 98, 98);
+					font-size: 36px;
+					font-family: "PTSans-Bold";
+					color: rgb(98, 98, 98);
+					line-height: 1.333;
+					text-align: left;
+					margin: 0;
+					margin: 25px 0;
+					padding-left: 20px;
+				}
+				.next {
+					font-family: 'PTSans-Bold';
+					font-size: 48px;
+					color: #fff;
+					line-height: 100%;
+					text-transform: uppercase;
+					padding-bottom: 45px;
+					span {
+						color: rgb(203, 59, 59);
+					}
+				}
+			}
+			.price-button {
+				font-family: "PTSans-bold";
+				color: rgb(98, 98, 98);
+				line-height: 100%;
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				justify-content: center;
+				-ms-align-items: center;
+				align-items: center;
+				p {
+					color: rgb(98, 98, 98);
+					line-height: 100%;
+					font-size: 100px;
+					margin-right: 100px;
+				}
+				.button {
+					background-color: rgb(98, 98, 98);
+					box-shadow: 0px 0px 28.71px 0.29px rgba(7, 7, 7, 0.85);
+					width: 281px;
+					height: 73px;
+					position: relative;
+					font-size: 34px;
+					text-transform: uppercase;
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;
+					justify-content: center;
+					-ms-align-items: center;
+					align-items: center;
+					color: #fff;
+					text-decoration: none;
+					&:before {
+						background: linear-gradient(135deg, #fff 50%, transparent 50%);
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 37px;
+						height: 37px;
+						content: "";
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1900px) {
+	body main .group {
+		transform: scale(0.95);
+	}
+}
+
+@media screen and (max-width: 1590px) {
+	body main .group {
+		transform: scale(0.9);
+	}
+}
+
+@media screen and (max-width: 1390px) {
+	body main .group {
+		transform: scale(0.8);
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	body main .group {
+		transform: scale(0.75);
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	body main .group {
+		height: auto;
+	}
+	body main .group h1:before {
+		position: relative;
+		margin: 0;
+		margin-left: auto;
+		margin-bottom: 40px;
+	}
+	body main .group .content {
+		width: 90%;
+		ul {
+			line-height: 100%;
+			li {
+				padding-bottom: 20px;
+			}
+		}
+		.next {
+			text-align: center;
+			line-height: 120%;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	body main .group {
+		transform: scale(1);
+		width: 80%;
+		padding: 20px 0;
+		&:before {
+			width: 50px;
+			height: 50px;
+		}
+		h1 {
+			font-size: 22px;
+			&:before {
+				font-size: 14px;
+				width: 130px;
+				height: 30px;
+				margin-bottom: 20px;
+			}
+		}
+		.content {
+			ul {
+				font-size: 16px;
+				margin-bottom: 10px;
+			}
+			.next {
+				font-size: 18px;
+			}
+		}
+		.price-button {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-around;
+			width: 100%;
+			p {
+				font-size: 50px;
+				margin: 0;
+			}
+			.button {
+				font-size: 18px;
+				width: 150px;
+				height: 40px;
+				&:before {
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 350px) {
+	body main .group {
+		width: 95%;
+	}
+}

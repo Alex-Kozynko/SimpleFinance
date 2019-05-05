@@ -1,0 +1,1 @@
+sass --watch -s compressed webinar.scss:../css/webinar.css

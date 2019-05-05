@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<title>Simple Finance</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="icon" type="image/png" href="favicon.png"/>
+	<link rel="stylesheet" type="text/css" href="css/webinar.css">
+	<link rel="stylesheet" type="text/css" href="css/webinar-comment.css">
+	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/libs.min.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo-login">
+				<p class="logo"><span>SIMPLE</span> FINANCE</p>
+				<div class="login"><a href="#" class="exit">Выйти</a><div class="photo"><img src="img/User.png" alt="" /></div></div>
+			</div>
+			<div class="data-free">
+				<div class="data"><p><span class="accent-color">4-5 </span>серпня о<span class="accent-color"> 19:00 </span>год</p></div>
+				<div class="free-finans">
+					<p class="free">СЕРІЯ БЕСКОШТОВНИХ онлайн МАСТЕР-КЛАСІВ</p>
+					<p class="finans">Приватні фінанси 2018<span class="accent-color">.</span></p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="left">
+				<div class="video-container">
+					<iframe width="100%" height="100%" data-src="https://www.youtube.com/embed/8TJiOm5KHys" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+				<div class="enroll">
+					<p class="num-one">Бути в числі перших</p>
+					<p class="list">записатись У <span> раній список</span></p>
+					<a href="#" class="button">записатись</a>
+				</div>
+			</div>
+			<div class="right">
+				<div id="hypercomments_widget"></div>
+				<script type="text/javascript">
+					_hcwp = window._hcwp || [];
+					_hcwp.push({widget:"Stream", widget_id: 104812});
+					(function() {
+						if("HC_LOAD_INIT" in window)return;
+						HC_LOAD_INIT = true;
+						var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+						var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+						hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/104812/"+lang+"/widget.js";
+						var s = document.getElementsByTagName("script")[0];
+						s.parentNode.insertBefore(hcc, s.nextSibling);
+					})();
+				</script>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<p class="follow">Приєднуйтесь до нас в соціальниих мережах:</p>
+			<div class="ico">
+				<a href="#"><img src="img/telega.png" alt="" /></a>
+				<a href="#"><img src="img/fb.png" alt="" /></a>
+				<a href="#"><img src="img/inst.png" alt="" /></a>
+			</div>
+			<p class="protection"><span>© 2018 simple finance.</span> Всі права захищені</p>	
+		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+            $("a").click(function (event) {
+                //отменяем стандартную обработку нажатия по ссылке
+                event.preventDefault();
+
+                //забираем идентификатор бока с атрибута href
+                var id  = $(this).attr('href'),
+
+                //узнаем высоту от начала страницы до блока на который ссылается якорь
+                    top = $(id).offset().top;
+                
+                //анимируем переход на расстояние - top за 1500 мс
+                $('body,html').animate({scrollTop: top}, 1500);
+            });
+        });
+    </script>
+</body>
+</html>
